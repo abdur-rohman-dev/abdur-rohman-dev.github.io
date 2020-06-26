@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="app">
+    <center class="title">Currency Converter</center>
+    <center id="date" class="subtitle"></center>
+    <div class="app-convert">
+        <div class="form-group">
+          <div id="base-name" class="country-name"></div>
+          <select id="currency-base-select" class="select-css" onchange="convert()"></select>
+          <img id="currency-base-flag" class="flag-img">
+          <input type="number" id="currency" class="select-css" value="1" onkeyup="convert()" onchange="convert()">
+          <div id="base-name-currency" class="country-name"></div>
+        </div>
+        <div class="form-divider">
+          <button id="button" onclick="change()">SWITCH</button>
+        </div>
+        <div class="form-group">
+          <div id="target-name" class="country-name"></div>
+          <select id="currency-select" class="select-css" onchange="convert()"></select>
+          <img id="currency-select-flag" class="flag-img">
+          <input type="number" id="currency-result" class="select-css" disabled>
+          <div id="target-name-currency" class="country-name"></div>
+        </div>
+    </div>
+    <center>Created by mprambadi</center>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
